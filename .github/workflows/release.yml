@@ -116,6 +116,10 @@ jobs:
 
   download-onedir-artifact:
     name: Download Staging Onedir Artifact
+<<<<<<< HEAD
+=======
+    if: ${{ inputs.skip-salt-pkg-download-test-suite == false }}
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
     runs-on:
       - self-hosted
       - linux
@@ -225,6 +229,7 @@ jobs:
       salt-version: "${{ needs.prepare-workflow.outputs.salt-version }}"
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
 
+<<<<<<< HEAD
   macos-13-ci-deps:
     name: macOS 13 Deps
     needs:
@@ -241,6 +246,8 @@ jobs:
       salt-version: "${{ needs.prepare-workflow.outputs.salt-version }}"
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
 
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
   almalinux-8-ci-deps:
     name: Alma Linux 8 Deps
     needs:
@@ -858,7 +865,10 @@ jobs:
       - fedora-38-arm64-ci-deps
       - fedora-38-ci-deps
       - macos-12-ci-deps
+<<<<<<< HEAD
       - macos-13-ci-deps
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
       - photonos-3-arm64-ci-deps
       - photonos-3-ci-deps
       - photonos-4-arm64-ci-deps
@@ -1061,7 +1071,10 @@ jobs:
       - windows-2019-ci-deps
       - windows-2022-ci-deps
       - macos-12-ci-deps
+<<<<<<< HEAD
       - macos-13-ci-deps
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
       - almalinux-8-ci-deps
       - almalinux-8-arm64-ci-deps
       - almalinux-9-ci-deps

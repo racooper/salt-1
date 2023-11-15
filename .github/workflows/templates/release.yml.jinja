@@ -150,6 +150,10 @@ permissions:
 
   download-onedir-artifact:
     name: Download Staging Onedir Artifact
+<<<<<<< HEAD
+=======
+    if: ${{ inputs.skip-salt-pkg-download-test-suite == false }}
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
     runs-on:
       - self-hosted
       - linux

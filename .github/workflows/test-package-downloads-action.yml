@@ -394,10 +394,14 @@ jobs:
           - distro-slug: macos-12
             arch: x86_64
             pkg-type: package
+<<<<<<< HEAD
           - distro-slug: macos-13
             arch: x86_64
             pkg-type: package
           - distro-slug: macos-13
+=======
+          - distro-slug: macos-12
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
             arch: x86_64
             pkg-type: onedir
 

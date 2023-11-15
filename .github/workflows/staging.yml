@@ -772,6 +772,7 @@ jobs:
       salt-version: "${{ needs.prepare-workflow.outputs.salt-version }}"
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
 
+<<<<<<< HEAD
   macos-13-ci-deps:
     name: macOS 13 Deps
     if: ${{ fromJSON(needs.prepare-workflow.outputs.jobs)['build-deps-ci'] && fromJSON(needs.prepare-workflow.outputs.runners)['github-hosted'] }}
@@ -789,6 +790,8 @@ jobs:
       salt-version: "${{ needs.prepare-workflow.outputs.salt-version }}"
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
 
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
   almalinux-8-ci-deps:
     name: Alma Linux 8 Deps
     if: ${{ fromJSON(needs.prepare-workflow.outputs.jobs)['build-deps-ci'] && fromJSON(needs.prepare-workflow.outputs.runners)['self-hosted'] }}
@@ -1790,6 +1793,7 @@ jobs:
       skip-junit-reports: true
       testing-releases: ${{ needs.prepare-workflow.outputs.testing-releases }}
 
+<<<<<<< HEAD
   macos-13-pkg-tests:
     name: macOS 13 Package Test
     if: ${{ fromJSON(needs.prepare-workflow.outputs.jobs)['test-pkg'] && fromJSON(needs.prepare-workflow.outputs.runners)['github-hosted'] }}
@@ -1812,6 +1816,8 @@ jobs:
       skip-junit-reports: true
       testing-releases: ${{ needs.prepare-workflow.outputs.testing-releases }}
 
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
   windows-2016-nsis-pkg-tests:
     name: Windows 2016 NSIS Package Test
     if: ${{ fromJSON(needs.prepare-workflow.outputs.jobs)['test-pkg'] && fromJSON(needs.prepare-workflow.outputs.runners)['self-hosted'] }}
@@ -1963,8 +1969,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   windows-2019:
     name: Windows 2019 Test
@@ -1985,8 +1994,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   windows-2022:
     name: Windows 2022 Test
@@ -2007,8 +2019,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   macos-12:
     name: macOS 12 Test
@@ -2029,6 +2044,7 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
 
@@ -2053,6 +2069,8 @@ jobs:
       skip-junit-reports: true
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   almalinux-8:
     name: Alma Linux 8 Test
@@ -2073,8 +2091,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   almalinux-9:
     name: Alma Linux 9 Test
@@ -2095,8 +2116,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   amazonlinux-2:
     name: Amazon Linux 2 Test
@@ -2117,8 +2141,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   archlinux-lts:
     name: Arch Linux LTS Test
@@ -2139,8 +2166,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   centos-7:
     name: CentOS 7 Test
@@ -2161,8 +2191,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   centosstream-8:
     name: CentOS Stream 8 Test
@@ -2183,8 +2216,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   centosstream-9:
     name: CentOS Stream 9 Test
@@ -2205,8 +2241,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   debian-10:
     name: Debian 10 Test
@@ -2227,8 +2266,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   debian-11:
     name: Debian 11 Test
@@ -2249,8 +2291,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   debian-11-arm64:
     name: Debian 11 Arm64 Test
@@ -2271,8 +2316,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   debian-12:
     name: Debian 12 Test
@@ -2293,8 +2341,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   debian-12-arm64:
     name: Debian 12 Arm64 Test
@@ -2315,8 +2366,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   fedora-37:
     name: Fedora 37 Test
@@ -2337,8 +2391,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   fedora-38:
     name: Fedora 38 Test
@@ -2359,8 +2416,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   opensuse-15:
     name: Opensuse 15 Test
@@ -2381,8 +2441,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   photonos-3:
     name: Photon OS 3 Test
@@ -2403,8 +2466,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   photonos-3-arm64:
     name: Photon OS 3 Arm64 Test
@@ -2425,8 +2491,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   photonos-4:
     name: Photon OS 4 Test
@@ -2447,8 +2516,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   photonos-4-arm64:
     name: Photon OS 4 Arm64 Test
@@ -2469,8 +2541,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   photonos-5:
     name: Photon OS 5 Test
@@ -2491,8 +2566,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   photonos-5-arm64:
     name: Photon OS 5 Arm64 Test
@@ -2513,8 +2591,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   ubuntu-2004:
     name: Ubuntu 20.04 Test
@@ -2535,8 +2616,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   ubuntu-2004-arm64:
     name: Ubuntu 20.04 Arm64 Test
@@ -2557,8 +2641,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   ubuntu-2204:
     name: Ubuntu 22.04 Test
@@ -2579,8 +2666,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   ubuntu-2204-arm64:
     name: Ubuntu 22.04 Arm64 Test
@@ -2601,8 +2691,11 @@ jobs:
       cache-prefix: ${{ needs.prepare-workflow.outputs.cache-seed }}|3.10.13
       skip-code-coverage: true
       skip-junit-reports: true
+<<<<<<< HEAD
       workflow-slug: staging
       default-timeout: 180
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
 
   build-src-repo:
     name: Build Repository
@@ -3447,7 +3540,10 @@ jobs:
       - fedora-38-arm64-ci-deps
       - fedora-38-ci-deps
       - macos-12-ci-deps
+<<<<<<< HEAD
       - macos-13-ci-deps
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
       - photonos-3-arm64-ci-deps
       - photonos-3-ci-deps
       - photonos-4-arm64-ci-deps
@@ -3484,7 +3580,10 @@ jobs:
       - windows-2019-ci-deps
       - windows-2022-ci-deps
       - macos-12-ci-deps
+<<<<<<< HEAD
       - macos-13-ci-deps
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
       - almalinux-8-ci-deps
       - almalinux-8-arm64-ci-deps
       - almalinux-9-ci-deps
@@ -3522,7 +3621,10 @@ jobs:
       - windows-2019
       - windows-2022
       - macos-12
+<<<<<<< HEAD
       - macos-13
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
       - almalinux-8
       - almalinux-9
       - amazonlinux-2
@@ -3568,7 +3670,10 @@ jobs:
       - ubuntu-2204-pkg-tests
       - ubuntu-2204-arm64-pkg-tests
       - macos-12-pkg-tests
+<<<<<<< HEAD
       - macos-13-pkg-tests
+=======
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
       - windows-2016-nsis-pkg-tests
       - windows-2016-msi-pkg-tests
       - windows-2019-nsis-pkg-tests

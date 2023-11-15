@@ -4,7 +4,11 @@ description: Setup actionlint
 inputs:
   version:
     description: The version of actionlint
+<<<<<<< HEAD
     default: 1.6.26
+=======
+    default: 1.6.24
+>>>>>>> 1c2038c7ba (Revert "second attempt to delete .github from local version")
   cache-seed:
     required: true
     type: string
